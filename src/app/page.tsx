@@ -11,7 +11,7 @@ export default function Home() {
           <div className="relative w-full max-w-md">
             <div className="aspect-square rounded-2xl overflow-hidden border-4 border-white/10 shadow-2xl">
               <Image
-                src="/assets/images/profile-photo.jpg"
+                src="/assets/images/profile-photo-professional.jpg"
                 alt="Mike Mai"
                 width={500}
                 height={500}
@@ -93,11 +93,11 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Link href="/projects/tiktok-ecommerce-analysis" className="group">
+            <a href="https://github.com/kexiajie-coder/TikTok-Ecommerce-Analysis" target="_blank" rel="noopener noreferrer" className="group">
               <div className="bg-white rounded-2xl overflow-hidden border border-gray-200 hover:border-accent transition-all hover:shadow-2xl hover:-translate-y-1">
                 <div className="aspect-video relative overflow-hidden">
                   <Image
-                    src="/assets/images/tiktok-dashboard.png"
+                    src="/assets/images/tiktok-preview.png"
                     alt="TikTok Analytics Dashboard"
                     width={600}
                     height={338}
@@ -113,13 +113,13 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-            </Link>
+            </a>
 
-            <Link href="/projects/synapse-ai-networking-crm" className="group">
+            <a href="https://github.com/kexiajie-coder/Synapse-AI-CRM" target="_blank" rel="noopener noreferrer" className="group">
               <div className="bg-white rounded-2xl overflow-hidden border border-gray-200 hover:border-accent transition-all hover:shadow-2xl hover:-translate-y-1">
                 <div className="aspect-video relative overflow-hidden">
                   <Image
-                    src="/assets/images/ai-case-preview.jpg"
+                    src="/assets/images/ai-preview.png"
                     alt="Synapse AI CRM"
                     width={600}
                     height={338}
@@ -135,12 +135,18 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-            </Link>
+            </a>
 
-            <Link href="/projects/tuneworks-sql-analysis" className="group">
+            <a href="https://github.com/kexiajie-coder/SQL-Analysis" target="_blank" rel="noopener noreferrer" className="group">
               <div className="bg-white rounded-2xl overflow-hidden border border-gray-200 hover:border-accent transition-all hover:shadow-2xl hover:-translate-y-1">
-                <div className="aspect-video bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center">
-                  <span className="text-7xl">💾</span>
+                <div className="aspect-video relative overflow-hidden">
+                  <Image
+                    src="/assets/images/sql-preview.png"
+                    alt="TuneWorks SQL Analysis"
+                    width={600}
+                    height={338}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl lg:text-2xl font-bold text-black mb-3 group-hover:text-accent transition">
@@ -151,7 +157,7 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-            </Link>
+            </a>
           </div>
 
           <div className="text-center mt-12">

@@ -39,6 +39,7 @@ export const skillsData: SkillCategory[] = [
       'Market Research',
       'Data-Driven Decision Making',
       'KPI Development',
+      'Vibe Coding',
     ],
   },
 ];

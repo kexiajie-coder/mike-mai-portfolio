@@ -10,8 +10,8 @@ export const projects: Project[] = [
     fullDescription:
       'Comprehensive statistical analysis of 350+ TikTok videos (93M+ views, 0.69M collects) to uncover hidden gem creators and conversion patterns. Discovered 67 high-potential creators with >3% collect rates and found 30-45s videos drive 57% higher conversion (0.74% vs 0.47% global average).',
     category: 'data-analysis',
-    thumbnail: '/assets/images/tiktok-dashboard.png',
-    images: ['/assets/images/tiktok-dashboard.png'],
+    thumbnail: '/assets/images/tiktok-preview.png',
+    images: ['/assets/images/tiktok-preview.png'],
     technologies: [
       'Python',
       'Pandas',
@@ -26,7 +26,6 @@ export const projects: Project[] = [
     featured: true,
     links: {
       github: 'https://github.com/kexiajie-coder/TikTok-Ecommerce-Analysis',
-      notebook: '/assets/projects/tiktok-notebook.html',
     },
     date: '2026-02',
     highlights: [
@@ -47,8 +46,8 @@ export const projects: Project[] = [
     fullDescription:
       'Developed Synapse, an AI-powered networking CRM that transforms fragmented conversation notes into actionable relationship insights using NLP and LLMs. Led Team A4ever (7 members) to Top 6 finish at USC Marshall AI Case Competition, creating smart capture, auto-summarization, and AI-generated follow-up features for professional relationship management.',
     category: 'ai-ml',
-    thumbnail: '/assets/images/ai-case-preview.jpg',
-    images: ['/assets/images/ai-case-preview.jpg'],
+    thumbnail: '/assets/images/ai-preview.png',
+    images: ['/assets/images/ai-preview.png'],
     technologies: [
       'Natural Language Processing (NLP)',
       'Large Language Models (LLMs)',
@@ -59,6 +58,7 @@ export const projects: Project[] = [
     ],
     featured: true,
     links: {
+      github: 'https://github.com/kexiajie-coder/Synapse-AI-CRM',
       presentation: '/assets/projects/ai-case-presentation.pdf',
     },
     date: '2026-02',
@@ -82,8 +82,8 @@ export const projects: Project[] = [
     fullDescription:
       'Conducted end-to-end SQL analysis for TuneWorks entertainment booking agency facing revenue stagnation, uncovering a $100k+ revenue opportunity by recommending strategic shift from solo acts to high-margin band bookings. Benchmarked human-driven SQL insights against AI analysis (Gemini), demonstrating superior depth in detecting complex commission inefficiencies and resource misallocations that automated tools missed.',
     category: 'sql-database',
-    thumbnail: '/assets/images/sql-project-preview.jpg',
-    images: ['/assets/images/sql-project-preview.jpg'],
+    thumbnail: '/assets/images/sql-preview.png',
+    images: ['/assets/images/sql-preview.png'],
     technologies: [
       'SQL (PostgreSQL)',
       'Advanced Excel',
@@ -95,7 +95,7 @@ export const projects: Project[] = [
     ],
     featured: true,
     links: {
-      github: 'https://github.com/kexiajie-coder',
+      github: 'https://github.com/kexiajie-coder/SQL-Analysis',
     },
     date: '2025-12',
     highlights: [

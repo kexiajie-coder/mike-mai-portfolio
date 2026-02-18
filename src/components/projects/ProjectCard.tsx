@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Image from 'next/image';
 import { Github, ExternalLink, Award } from 'lucide-react';
 import { Project } from '@/types/project';
 
@@ -10,8 +10,14 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <div className="bg-white rounded-lg border border-gray-200 overflow-hidden card-hover">
       {/* Thumbnail */}
-      <div className="aspect-video bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-        <div className="text-6xl">{getCategoryIcon(project.category)}</div>
+      <div className="aspect-video relative overflow-hidden bg-gray-100">
+        <Image
+          src={project.thumbnail}
+          alt={project.title}
+          width={600}
+          height={338}
+          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+        />
       </div>
 
       {/* Content */}
@@ -58,10 +64,10 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               href={project.links.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-gray-700 hover:text-accent transition text-sm font-medium"
+              className="flex items-center gap-2 text-accent hover:text-accent-dark transition text-sm font-semibold"
             >
               <Github className="w-4 h-4" />
-              GitHub
+              View on GitHub →
             </a>
           )}
           {project.links.notebook && (
@@ -75,27 +81,8 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               Notebook
             </a>
           )}
-          <Link
-            href={`/projects/${project.slug}`}
-            className="ml-auto flex items-center gap-2 text-accent hover:text-accent-dark transition text-sm font-semibold"
-          >
-            View Details →
-          </Link>
         </div>
       </div>
     </div>
   );
-}
-
-function getCategoryIcon(category: string): string {
-  switch (category) {
-    case 'data-analysis':
-      return '📊';
-    case 'ai-ml':
-      return '🤖';
-    case 'sql-database':
-      return '💾';
-    default:
-      return '💼';
-  }
 }
